@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "lint": "tslint --project ."
+    "lint": "tslint --project .",
+    "prepare": "npm run lint && npm run build"
   },
   "keywords": [],
   "author": "Igor Katsuba <katsuba.igor@gmail.com>",
@@ -24,5 +25,8 @@
   "files": [
     "**/*.d.ts",
     "dist/*"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
