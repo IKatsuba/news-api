@@ -21,7 +21,7 @@
   "keywords": [],
   "author": "Igor Katsuba <katsuba.igor@gmail.com>",
   "license": "MIT",
-  "typings": "./lib/typescript.d.ts",
+  "typings": "./lib/index.d.ts",
   "files": [
     "**/*.d.ts",
     "dist/*"
