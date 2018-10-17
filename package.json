@@ -1,6 +1,6 @@
 {
   "name": "@katsuba/newsapi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A unofficial modern browser interface for NewsAPI.",
   "main": "dist/bundle.js",
   "dependencies": {
