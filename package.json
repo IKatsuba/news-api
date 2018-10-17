@@ -16,14 +16,17 @@
   "scripts": {
     "build": "webpack",
     "lint": "tslint --project .",
-    "prepare": "npm run lint && npm run build"
+    "prepare": "npm run lint && tsc && npm run build"
   },
   "keywords": [],
   "author": "Igor Katsuba <katsuba.igor@gmail.com>",
   "license": "MIT",
   "typings": "./lib/index.d.ts",
   "files": [
-    "**/*.d.ts",
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "index.d.ts",
+    "index.js",
     "dist/*"
   ],
   "publishConfig": {
