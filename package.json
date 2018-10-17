@@ -1,7 +1,7 @@
 {
   "name": "@katsuba/newsapi",
   "version": "0.0.0",
-  "description": "A modern browser interface for NewsAPI.",
+  "description": "A unofficial modern browser interface for NewsAPI.",
   "main": "dist/bundle.js",
   "dependencies": {
     "typescript": "^3.1.3",
