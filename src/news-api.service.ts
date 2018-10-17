@@ -16,7 +16,7 @@ export class NewsApi {
       headers.append('X-Api-Key', this.apiKey);
     }
 
-    return fetch(url, {method: 'GET', headers})
+    return fetch(u.toString(), {method: 'GET', headers})
       .then(res => res.json()) as Promise<T>;
   }
 
