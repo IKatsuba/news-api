@@ -11,5 +11,5 @@ export interface EverythingPayload {
   sortBy?: SortBy;
   pageSize?: number;
   page?: number;
-  apiKey?: number;
+  apiKey?: string;
 }
