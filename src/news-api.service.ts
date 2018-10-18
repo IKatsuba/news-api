@@ -6,7 +6,7 @@ export class NewsApi {
   }
 
   private _fetch<T>(url: string, {body}: { body: any }): Promise<T> {
-    const u = new URL(url);
+    const u = new URL(API_URL + url);
     Object.keys(body).forEach((key) => {
       u.searchParams.append(key, body[key].toString());
     });
@@ -21,14 +21,14 @@ export class NewsApi {
   }
 
   public topHeadlines(body: TopHeadlinesPayload): Promise<ArticleResponse> {
-    return this._fetch<ArticleResponse>(API_URL + 'top-headlines', {body});
+    return this._fetch<ArticleResponse>('top-headlines', {body});
   }
 
   public everything(body: EverythingPayload): Promise<ArticleResponse> {
-    return this._fetch<ArticleResponse>(API_URL + 'everything', {body});
+    return this._fetch<ArticleResponse>('everything', {body});
   }
 
   public sources(body: SourcesPayload): Promise<SourcesResponse> {
-    return this._fetch<SourcesResponse>(API_URL + 'sources', {body});
+    return this._fetch<SourcesResponse>('sources', {body});
   }
 }
